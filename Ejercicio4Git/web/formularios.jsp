@@ -20,11 +20,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form name="formNombre" action="respuesta1" method="GET">
+        <form name="formNombre" action="respuesta1.jsp" method="GET">
             Nombre:<input type="text" name="nombre">
             <input type="submit" value="enviar">
         </form>    
-        <form name="formNumero" action="respuesta2" method="GET">
+        <form name="formNumero" action="respuesta2.jsp" method="GET">
             Numero:<input type="text" name="numero">
             <input type="submit" value="enviar">
         </form>    

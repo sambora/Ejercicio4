@@ -32,7 +32,7 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        if(request.getParameter("user").equals("rafa") && request.getParameter("user").equals("1234")){
+        if(request.getParameter("user").equals("rafa") && request.getParameter("pass").equals("1234")){
             HttpSession session = request.getSession();
             session.setAttribute("user", request.getParameter("user"));
             response.sendRedirect("formularios.jsp");
