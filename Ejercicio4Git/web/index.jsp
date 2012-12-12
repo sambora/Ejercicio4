@@ -10,8 +10,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        
+        <%
+        String error = "";
+        if(request.getParameter("error") != null){
+            error= "Error en el login";
+        }
+
+%>
+        
     </head>
     <body>
-        <h1>Hello World!</h1>
+
+        <form method="GET" action="Login">
+            User:<input type="text" name="user"><br />
+
+            Pass:<input type="password" name="pass">
+
+            <input type="submit" value="Aceptar">
+        </form>
+        
+        <div>
+            <%=error%>
+        </div>
+
     </body>
 </html>
